@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OrgBox — Privacy Policy</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 4rem;
+        color: #1a1a1a;
+        background: #fff;
+      }
+      @media (prefers-color-scheme: dark) {
+        body { color: #e6e6e6; background: #15171a; }
+        code { background: #2a2d31; }
+        a { color: #6ab0ff; }
+      }
+      h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
+      h2 { font-size: 1.2rem; margin-top: 2rem; }
+      .updated { color: #777; font-size: 0.9rem; margin-top: 0; }
+      code { background: #f0f0f0; padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+      ul { padding-left: 1.25rem; }
+      li { margin: 0.4rem 0; }
+      a { color: #1a73e8; }
+    </style>
+  </head>
+  <body>
+    <h1>OrgBox — Privacy Policy</h1>
+    <p class="updated">Last updated: 2026-06-13</p>
+
+    <p>
+      OrgBox is a Chrome extension that lets you stay signed in to multiple Xero
+      organisations at the same time by keeping each session's cookies isolated in
+      its own private container.
+    </p>
+
+    <h2>The short version</h2>
+    <p>
+      <strong>OrgBox does not collect, transmit, sell, or share any of your data.</strong>
+      Everything it stores stays on your own computer, inside your Chrome profile.
+      There are no OrgBox servers, no analytics, and no third parties.
+    </p>
+
+    <h2>What OrgBox stores, and why</h2>
+    <p>
+      All of the following is stored <strong>locally</strong> using Chrome's
+      extension storage (<code>chrome.storage</code>) and never leaves your device:
+    </p>
+    <ul>
+      <li>
+        <strong>Session cookies for Xero sites</strong> (<code>*.xero.com</code>).
+        These are the cookies that keep you logged in. OrgBox keeps a separate,
+        private copy per session so your organisations stay isolated. They are
+        stored in the same place, and with the same protection, as Chrome's own
+        cookie storage.
+      </li>
+      <li>
+        <strong>Session details</strong> you can see in the extension: each
+        session's name, colour, and the last Xero page it was on (so "Open" can
+        take you back there). Auth pages are never stored as a return location.
+      </li>
+      <li>
+        <strong>Tab and group associations</strong> (which open tab belongs to
+        which session).
+      </li>
+      <li>
+        <strong>A local diagnostics log</strong> of recent extension events (e.g.
+        "session created", "logged in"), capped to the most recent few hundred
+        entries, used only for troubleshooting. It records page origins and paths
+        but never query strings, cookie values, passwords, or page contents. You
+        can clear it at any time from the extension's options page.
+      </li>
+    </ul>
+
+    <h2>What OrgBox reads</h2>
+    <ul>
+      <li>
+        <strong>The page title of the Xero tab you are viewing</strong>, so a
+        session can rename itself to the organisation you are in. Only the visible
+        tab is read, and only the title text is used.
+      </li>
+    </ul>
+
+    <h2>What OrgBox does NOT do</h2>
+    <ul>
+      <li>It does not send any data to any server — there is no backend.</li>
+      <li>It does not include analytics, tracking, or advertising.</li>
+      <li>It does not read or store data from sites other than Xero (<code>*.xero.com</code>).</li>
+      <li>It does not record passwords, MFA codes, page contents, or cookie values in its diagnostics log.</li>
+    </ul>
+
+    <h2>Permissions, in plain terms</h2>
+    <ul>
+      <li><strong>cookies / host access to <code>*.xero.com</code></strong> — to keep each session's Xero login isolated in its own container.</li>
+      <li><strong>declarativeNetRequest / webRequest</strong> — to attach the correct session's cookies to each tab's requests, locally, as they happen.</li>
+      <li><strong>tabs / tabGroups</strong> — to colour-group a session's tabs and know which tab belongs to which session.</li>
+      <li><strong>storage</strong> — to remember your sessions between browser restarts, on your device only.</li>
+      <li><strong>notifications</strong> — to alert you if something goes wrong.</li>
+    </ul>
+
+    <h2>Your control over your data</h2>
+    <ul>
+      <li>Deleting a session in OrgBox erases that session's stored cookies and details.</li>
+      <li>The "Clean Xero cookies from real jar" action clears Xero cookies from Chrome's normal cookie store.</li>
+      <li>Removing the extension from Chrome deletes everything OrgBox has stored.</li>
+    </ul>
+
+    <h2>Not affiliated with Xero</h2>
+    <p>
+      OrgBox is an independent tool and is not affiliated with, endorsed by, or
+      sponsored by Xero Limited. "Xero" is a trademark of its respective owner and
+      is used here only to describe what the extension works with.
+    </p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:chris@dodsonps.com.au">chris@dodsonps.com.au</a></p>
+  </body>
+</html>
