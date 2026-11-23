@@ -30,7 +30,7 @@
   </head>
   <body>
     <h1>OrgBox — Privacy Policy</h1>
-    <p class="updated">Last updated: 2026-06-13</p>
+    <p class="updated">Last updated: 2026-11-23</p>
 
     <p>
       OrgBox is a Chrome extension that lets you stay signed in to multiple Xero
@@ -55,8 +55,10 @@
         <strong>Session cookies for Xero sites</strong> (<code>*.xero.com</code>).
         These are the cookies that keep you logged in. OrgBox keeps a separate,
         private copy per session so your organisations stay isolated. They are
-        stored in the same place, and with the same protection, as Chrome's own
-        cookie storage.
+        kept in Chrome's extension storage inside your Chrome profile folder on
+        this computer. Unlike Chrome's own cookie store, extension storage is not
+        encrypted, so anyone (or any program) able to read your user files on this
+        computer could read them &mdash; keep your computer's login secure.
       </li>
       <li>
         <strong>Session details</strong> you can see in the extension: each
@@ -70,9 +72,12 @@
       <li>
         <strong>A local diagnostics log</strong> of recent extension events (e.g.
         "session created", "logged in"), capped to the most recent few hundred
-        entries, used only for troubleshooting. It records page origins and paths
-        but never query strings, cookie values, passwords, or page contents. You
-        can clear it at any time from the extension's options page.
+        entries, used only for troubleshooting. It records Xero page addresses and
+        page titles (which include organisation names), but never cookie values,
+        passwords, or page contents. The downloadable diagnostics file also lists
+        each session's last Xero page and the addresses of open Xero tabs. Nothing
+        is sent anywhere unless you choose to share that file. You can clear the
+        log at any time from the extension's options page.
       </li>
     </ul>
 
